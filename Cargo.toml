@@ -1,0 +1,7 @@
+[workspace] 
+
+exclude = ["sample"]
+members = [
+    "core",
+]
+
