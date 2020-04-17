@@ -1,5 +1,12 @@
 mod logging;
 
+#[cfg(feature = "web")]
+#[macro_use]
+pub extern crate actix_web;
+
+#[cfg(feature = "web")]
+pub mod http;
+
 pub use logging::RappLogger;
 pub use slog;
 
