@@ -7,6 +7,12 @@ pub extern crate actix_web;
 #[cfg(feature = "web")]
 pub mod http;
 
+#[cfg(feature = "db")]
+pub use r2d2;
+
+#[cfg(feature = "db")]
+pub mod db;
+
 pub use logging::RappLogger;
 pub use slog;
 

@@ -4,6 +4,6 @@ exclude = ["sample"]
 members = [
     "core",
     "logging",
-    "httpd"
+    "httpd",
+    "db",
 ]
-

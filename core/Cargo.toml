@@ -20,6 +20,11 @@ futures = { version = "0.3.4", optional = true }
 pin-project = { version = "0.4.9", optional = true }
 serde_json = { version = "1.0.51", optional = true }
 serde = { version = "1.0.106", optional = true, features = ["derive"] }
+r2d2 = { version = "0.8.6", optional = true }
+diesel = { version = "1.4.3", optional = true, features = ["postgres", "r2d2"] }
+
 
 [features]
 web = ["actix-web", "futures", "pin-project", "serde", "serde_json"]
+db = ["r2d2", "diesel"]
+
