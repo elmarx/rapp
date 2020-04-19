@@ -22,6 +22,7 @@ serde_json = { version = "1.0.51", optional = true }
 serde = { version = "1.0.106", optional = true, features = ["derive"] }
 r2d2 = { version = "0.8.6", optional = true }
 diesel = { version = "1.4.3", optional = true, features = ["postgres", "r2d2"] }
+prometheus = { version = "0.8.0", features = ["process"] }
 
 
 [features]
