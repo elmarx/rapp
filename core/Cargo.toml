@@ -22,10 +22,12 @@ serde_json = { version = "1.0.51", optional = true }
 serde = { version = "1.0.106", optional = true, features = ["derive"] }
 r2d2 = { version = "0.8.6", optional = true }
 diesel = { version = "1.4.3", optional = true, features = ["postgres", "r2d2"] }
+diesel_migrations = { version = "1.4.0", optional = true }
 prometheus = { version = "0.8.0", features = ["process"] }
+thiserror = { version = "1.0.15", optional = true }
 
 
 [features]
 web = ["actix-web", "futures", "pin-project", "serde", "serde_json"]
-db = ["r2d2", "diesel"]
+db = ["r2d2", "diesel", "diesel_migrations", "thiserror"]
 
